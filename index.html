@@ -4,14 +4,20 @@
 <head>
   <meta charset="utf-8" />
   <title>TinDog Tutorial</title>
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:900|Ubuntu&display=swap" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700,800,900|Ubuntu&display=swap"
+    rel="stylesheet">
+  <!-- Bootstrap css -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <!-- Default css -->
   <link rel="stylesheet" href="css/styles.css" />
+  <!-- FontAwesome -->
+  <script src="https://kit.fontawesome.com/3d8eff4bf2.js" crossorigin="anonymous"></script>
 
 
 
-
+  <!-- Bootstrap Dependencies -->
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
     integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
   </script>
@@ -24,52 +30,76 @@
 </head>
 
 <body>
+
   <section id="title">
-    <nav class="navbar navbar-expand-sm navbar-dark">
-      <a class="navbar-brand" href="">Enolife</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navtoggler_hamburger"
-        aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navtoggler_hamburger">
-        <ul class="navbar-nav  ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="">Contact</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="">Download</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-sm navbar-dark">
+        <a class="navbar-brand" href="">Enolife</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navtoggler_hamburger"
+          aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navtoggler_hamburger">
+          <ul class="navbar-nav  ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">Download</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
 
-    <div class="row">
-      <div class="col-lg-6 col-md-12 col-12">
-        <h1 class="page_title">Meet new and interesting dogs nearby.</h1>
-        <button type="button">Download</button>
-        <button type="button">Download</button>
-      </div>
+      <div class="row">
+        <div class="col-lg-6 col-md-12 col-12">
+          <h1 class="page_title">Meet new and interesting dogs nearby.</h1>
+          <button type="button" class="btn btn-lg btn-dark download-button"><i class="fab fa-apple"></i>
+            Download</button>
+          <button type="button" class="btn btn-lg btn-outline-light download-button"><i class="fab fa-google-play"></i>
+            Download</button>
+        </div>
 
-      <div class="col-lg-6 col-md-12 col-12">
-        <img src="https://people.ucsc.edu/~tlee76/image/iphone6.png" alt="iphone-mockup" />
+        <div class="col-lg-6 col-md-12 col-12">
+          <img class="banner_image" src="https://people.ucsc.edu/~tlee76/image/iphone6.png" alt="iphone-mockup" />
+        </div>
       </div>
     </div>
   </section>
 
+
   <!-- Features -->
 
+
   <section id="features">
-    <h3>Easy to use.</h3>
-    <p>So easy to use, even your dog could do it.</p>
 
-    <h3>Elite Clientele</h3>
-    <p>We have all the dogs, the greatest dogs.</p>
 
-    <h3>Guaranteed to work.</h3>
-    <p>Find the love of your dog's life or your money back.</p>
+    <div class="container-fluid">
+      <div class="row text-center">
+
+        <div class="features col-lg-4">
+          <i class="fas fa-check-circle"></i>
+          <h3> Easy to use.</h3>
+          <p>So easy to use, even your dog could do it.</p>
+        </div>
+
+        <div class="features col-lg-4">
+          <i class="fas fa-bullseye"></i>
+          <h3> Elite Clientele</h3>
+          <p>We have all the dogs, the greatest dogs.</p>
+        </div>
+
+        <div class="features col-lg-4">
+          <i class="fas fa-heart"></i>
+          <h3> Guaranteed to work.</h3>
+          <p>Find the love of your dog's life or your money back.</p>
+        </div>
+      </div>
+    </div>
+
   </section>
 
   <!-- Testimonials -->
