@@ -4,6 +4,9 @@ body {
 
 .container-fluid {
     padding: 3% 15%;
+
+
+
 }
 
 /* Navigation Bar Area */
@@ -31,7 +34,14 @@ body {
 
 #title {
     background-color: #ff4c68;
+    position: relative;
+    z-index: 0;
+    padding-bottom: 15%;
 
+}
+
+.title_cont {
+    padding-bottom: 7%;
 }
 
 .page_title {
@@ -46,7 +56,10 @@ body {
 
 
 .banner_image {
-    transform: scale(0.8) rotate(25deg);
+    transform: rotate(20deg);
+    position: absolute;
+    z-index: -1;
+    right: 25%;
 }
 
 /* Page Buttons */
@@ -58,24 +71,35 @@ body {
 
 .features {
     margin-top: 7%;
+    margin-bottom: 7%;
+
 
 }
+
+.features_cont {
+    position: relative;
+    background-color: white;
+
+
+}
+
+
 
 h3 {
     font-family: "Montserrat";
     font-weight: 700;
     font-size: 1.5rem;
-    text-align: center;
+
 }
 
 .features p {
     color: #8f8f8f;
-    text-align: center;
+
 }
 
 .fas {
     color: #ef8172;
-    font-size: 4rem;
+    font-size: 4em;
     margin-bottom: 4.5%;
 
 
@@ -83,4 +107,91 @@ h3 {
 
 .fas:hover {
     color: #ff4c68;
+}
+
+#testimonials {
+    background-color: #ef8172;
+    color: white;
+    padding: 7% 15%;
+}
+
+.text-white {
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 1.5;
+
+
+
+}
+
+.testimonial_image {
+    border-radius: 100vh;
+    width: 10%;
+    margin: 20px;
+}
+
+#press {
+
+    background-color: #ef8172;
+    text-align: center;
+    padding-bottom: 3.5%;
+}
+
+
+.press_images {
+    width: 14%;
+    margin: 1.5%;
+}
+
+.press_images:hover {
+    filter: grayscale(100%);
+}
+
+#cta {
+    background-color: #ff4c68;
+    padding: 5% 0% 5%;
+
+}
+
+#cta h3 {
+    font-family: "Montserrat";
+    font-size: 3rem;
+    font-weight: 900;
+    color: white;
+
+}
+
+#footer {
+    padding: 5% 0% 5%;
+    background-color: #fff;
+
+}
+
+#footer p {
+
+    font-weight: 600;
+    color: #797579;
+}
+
+#footer i {
+    padding: 3% 0.7% 3%;
+    font-size: 1.4rem;
+}
+
+
+@media (max-width: 1028px) {
+
+    .banner_image {
+        transform: rotate(0deg);
+        position: static;
+        text-align: center;
+        max-width: 100%;
+
+    }
+
+    #title {
+        text-align: center;
+    }
+
 }
