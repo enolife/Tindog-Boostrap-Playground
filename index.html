@@ -65,7 +65,9 @@
         </div>
 
         <div class="col-lg-6 col-md-12 col-12 ">
-          <img class="banner_image " src="https://people.ucsc.edu/~tlee76/image/iphone6.png" alt="iphone-mockup" />
+          <img class="banner_image "
+            src="https://raw.githubusercontent.com/enolife/Tindog-Bootstrap-Playground/master/images/iphone6.png"
+            alt="iphone-mockup" />
         </div>
       </div>
 
@@ -107,16 +109,45 @@
   <!-- Testimonials -->
 
   <section id="testimonials" class="text-center">
-    <h2 class="text-white">
-      I no longer have to sniff other dogs for love. I've found the hottest
-      Corgi on TinDog. Woof.
-    </h2>
-    <img class="testimonial_image" src="images/dog-img.jpg" alt="dog-profile" />
-    <em>Pebbles, New York</em>
 
-    <!-- <h2 class="testimonial-text">My dog used to be so lonely, but with TinDog's help, they've found the love of their life. I think.</h2>
-    <img class="testimonial-image" src="images/lady-img.jpg" alt="lady-profile">
-    <em>Beverly, Illinois</em> -->
+    <div id="testimonials_carousel" class="carousel slide" data-ride="carousel">
+
+      <!-- Disabled until needed -->
+
+      <!-- <ol class="carousel-indicators">
+        <li data-target="#testimonials_carousel" data-slide-to="0" class="active"></li>
+        <li data-target="#testimonials_carousel" data-slide-to="1"></li>
+      </ol> -->
+
+      <!-- Carousel content container -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <h2 class="text-white">
+            I no longer have to sniff other dogs for love. I've found the hottest
+            Corgi on TinDog. Woof.
+          </h2>
+          <img class="testimonial_image" src="images/dog-img.jpg" alt="dog-profile" />
+          <em>Pebbles, New York</em>
+        </div>
+        <div class="carousel-item">
+          <h2 class="testimonial-text text-white">My Dog used to scream Reeeeeeeeeeeeeee... everyday until i discovered
+            Tindog.</h2>
+          <img class="testimonial_image" src="images/lady-img.jpg" alt="lady-profile">
+          <em>Beverly, Illinois</em>
+        </div>
+
+      </div>
+      <!-- Carousel control and toggle button -->
+      <a class="carousel-control-prev" href="#testimonials_carousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#testimonials_carousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+
   </section>
 
   <!-- Press -->
@@ -133,84 +164,88 @@
   <section id="pricing">
     <div class="mt-5 text-center">
       <h2>A Plan for Every Dog's Needs</h2>
-      <p>Simple and affordable price plans for your and your dog.</p>
+      <p>Simple and affordable price plans for you and your dog.</p>
     </div>
-
-    <div class="row">
-      <div class="card-deck mb-3 text-center container-fluid">
-        <div class="col-md-6 col-lg-4">
-          <div class="card mb-4 shadow-sm">
-            <div class="card-header">
-              <h4 class="my-0 font-weight-normal">Free</h4>
-            </div>
-            <div class="card-body">
-              <h1 class="card-title pricing-card-title">$0 <small class="text-muted">/ mo</small></h1>
-              <ul class="list-unstyled mt-3 mb-4 pb-4">
-                <li>5 Matches Per Day</li>
-                <li>10 Messages Per Day</li>
-                <li>Unlimited App Usage</li>
-              </ul>
-              <button type="button" class="btn btn-lg btn-block btn-outline-primary">Sign up</button>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4">
-          <div class="card mb-4 shadow-sm">
-            <div class="card-header">
-              <h4 class="my-0 font-weight-normal">Labrador</h4>
-            </div>
-            <div class="card-body">
-              <h1 class="card-title pricing-card-title">$49<small class="text-muted">/ mo</small></h1>
-              <ul class="list-unstyled mt-3 mb-4 pb-4">
-                <li>Unlimited Matches</li>
-                <li>Unlimited Messages</li>
-                <li>Unlimited App Usage</li>
-              </ul>
-              <button type="button" class="btn btn-lg btn-block btn-primary bt-1">Get started</button>
+    <div class="container">
+      <div class="row">
+        <div class="card-deck mb-3 text-center container">
+          <div class="col-md-6 col-lg-4">
+            <div class="card mb-4 shadow-sm">
+              <div class="card-header">
+                <h4 class="my-0 font-weight-normal">Free</h4>
+              </div>
+              <div class="card-body">
+                <h1 class="card-title pricing-card-title">$0 <small class="text-muted">/ mo</small></h1>
+                <ul class="list-unstyled mt-3 mb-4 pb-4">
+                  <li>5 Matches Per Day</li>
+                  <li>10 Messages Per Day</li>
+                  <li>Unlimited App Usage</li>
+                </ul>
+                <button type="button" class="btn btn-lg btn-block btn-outline-primary">Sign up</button>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="card mb-4 shadow-sm">
-            <div class="card-header">
-              <h4 class="my-0 font-weight-normal">Mastiff</h4>
+          <div class="col-md-6 col-lg-4">
+            <div class="card mb-4 shadow-sm">
+              <div class="card-header">
+                <h4 class="my-0 font-weight-normal">Labrador</h4>
+              </div>
+              <div class="card-body">
+                <h1 class="card-title pricing-card-title">$49<small class="text-muted">/ mo</small></h1>
+                <ul class="list-unstyled mt-3 mb-4 pb-4">
+                  <li>Unlimited Matches</li>
+                  <li>Unlimited Messages</li>
+                  <li>Unlimited App Usage</li>
+                </ul>
+                <button type="button" class="btn btn-lg btn-block btn-primary bt-1">Get started</button>
+              </div>
             </div>
-            <div class="card-body">
-              <h1 class="card-title pricing-card-title">$99 <small class="text-muted">/ mo</small></h1>
-              <ul class="list-unstyled mt-3 mb-4">
-                <li>Pirority Listing</li>
-                <li>Unlimited Matches</li>
-                <li>Unlimited Messages</li>
-                <li>Unlimited App Usage</li>
-              </ul>
-              <button type="button" class="btn btn-lg btn-block btn-primary">Contact us</button>
+          </div>
+          <div class="col-lg-4">
+            <div class="card mb-4 shadow-sm">
+              <div class="card-header">
+                <h4 class="my-0 font-weight-normal">Mastiff</h4>
+              </div>
+              <div class="card-body">
+                <h1 class="card-title pricing-card-title">$99 <small class="text-muted">/ mo</small></h1>
+                <ul class="list-unstyled mt-3 mb-4">
+                  <li>Pirority Listing</li>
+                  <li>Unlimited Matches</li>
+                  <li>Unlimited Messages</li>
+                  <li>Unlimited App Usage</li>
+                </ul>
+                <button type="button" class="btn btn-lg btn-block btn-primary">Contact us</button>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+  </section>
 
-    <!-- Call to Action -->
+  <!-- Call to Action -->
 
-    <section id="cta" class="text-center">
-      <h3>Find the True Love of Your Dog's Life Today.</h3>
-      <button type="button" class="btn btn-lg btn-dark download-button"><i class="fab fa-apple"></i>
-        Download</button>
-      <button type="button" class="btn btn-lg btn-light download-button"><i class="fab fa-google-play"></i>
-        Download</button>
+  <section id="cta" class="text-center">
+    <h3>Find the True Love of Your Dog's Life Today.</h3>
+    <button type="button" class="btn btn-lg btn-dark download-button"><i class="fab fa-apple"></i>
+      Download</button>
+    <button type="button" class="btn btn-lg btn-light download-button"><i class="fab fa-google-play"></i>
+      Download</button>
 
-    </section>
+  </section>
 
-    <!-- Footer -->
+  <!-- Footer -->
 
-    <footer id="footer" class="text-center">
-      <i class="fab fa-twitter"></i>
-      <i class="fab fa-facebook-f"></i>
-      <i class="fab fa-instagram"></i>
-      <i class="far fa-envelope"></i>
+  <footer id="footer" class="text-center">
+    <i class="fab fa-twitter"></i>
+    <i class="fab fa-facebook-f"></i>
+    <i class="fab fa-instagram"></i>
+    <i class="far fa-envelope"></i>
 
-      <p>© Copyright 2018 TinDog</p>
-    </footer>
+    <p>© Copyright <script type="text/javascript">
+        document.write(new Date().getFullYear());
+      </script> TinDog</p>
+  </footer>
 </body>
 
 </html>
